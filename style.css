@@ -884,7 +884,8 @@
 }
 @media screen and (max-width: 600px){
     .main_content{
-        height: 90vh;
+        height: 95vh;
+        margin: 0;
     }
 
     .mainNav .fa-xmark{
@@ -897,7 +898,7 @@
         display: none;
     }
     .music_player{
-        height: 80px;
+        height: 70px;
     }
     #footerNev{
         display: flex;
@@ -929,28 +930,40 @@
 
     #bottom-player {
         position: fixed;
-        bottom: 80px;
+        bottom: 69px;
         left: 0;
         width: 100%;
-        background-color: #800000;
+        background-color: #000000;
         color: white;
         display: none;
         justify-content: space-between;
         align-items: center;
         height: 60px;
-        padding: 10px;
+        padding: 0 3px 0 3px;
         box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.5);
         z-index: 6;
         overflow: hidden;
+
     }
-    #bottom-player .track-info{
+    #bottomInner{
+        background-color: #800000;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+        margin-right: 5px;
+        border-radius: 10px;
+        overflow: hidden;
+    }
+    #bottomInner .track-info{
         display: flex;
         overflow-x: auto;
         white-space: nowrap;
         flex-grow: 1;
     }
-    #bottom-player img{
-        width: 60px;
+    #bottomInner img{
+        width: 61px;
     }
     .track-info .trackText{
         padding: 2px 0px 0px 15px;
@@ -964,14 +977,14 @@
         font-weight: bolder;
     }
     #bottom-player .controls .music_icon3{
-        height: 3.2rem !important;
-        width: 3.2rem;
+        height: 3.1rem !important;
+        width: 3.1rem;
         margin-top: 15px;
         padding-right: 10px;
     }
     #bottom-player .controls .fa-heart{
         color: white;
-        margin-top: 32px;
+        margin-top: 30px;
         padding-right: 10px;
         font-size: 20px;
     }
@@ -1129,6 +1142,18 @@
         font-size: 20px;
         margin-right: 10px;
     }
+    .recent_card {
+        background-color: #121212;
+        padding: 10px;
+        margin-left: 0px;
+        margin-bottom: 0px;
+    }
+    .trending_cards .play_img{
+        display: none;
+    }
+    .trending_cards .description{
+        display: none;
+    }
 }
 @media screen and (max-width: 650px){
     .headline p{
@@ -1144,8 +1169,11 @@
         font-size: 14px;
     }
     .recent_card .description{
-        font-size: 9px;
+        font-size: 11px;
         margin-top: 8px;
+    }
+    .footer{
+        height: 350px;
     }
 }
     
