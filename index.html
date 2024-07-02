@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./assets/logo.png">
+    <title>Spotify – Web Player</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <div class="main">
+
+        <!-- =======>Overlay Music PLayer<====== -->
+
+        <div id="newPlayer">
+            <div class="newPlayerUpper">
+                <button><i class="fa-solid fa-chevron-down"></i></button>
+                <span>Morni</span>
+                <button><i class="fa-solid fa-ellipsis"></i></button>
+            </div>
+            <div class="newPlayerImgOuter">
+                <img class="newPlayerImg" src="/assets/card3img.jpeg" alt="">
+            </div>
+            <div class="newPlayerData">
+                <div class="newPlayerTexts">
+                    <span class="newText1">Morni</span>
+                    <span class="newText2">Jyoti Nooran</span>
+                </div>
+                <div class="newPlayerHeart">
+                    <span><i class="fa-regular fa-heart"></i></span>
+                </div>
+            </div>
+                <div class="newPlayerTrackOuter">
+                    <div id="newPlayerTrack">
+                        <div id="newPlayerInnerTrack"></div>
+                        <div id="newPlayerInnerThumb"></div>
+                    </div>
+                    <div class="newPlayerDuration">
+                        <span class="newPlayerStart" >0:00</span>
+                        <span class="newPlayerEnd" >0:00</span>
+                    </div>
+                </div>
+            <div class="music_all_icons">
+                <img class="music_icon1" src="./assets/player_icon1.png" alt="">
+                <img class="music_icon2" src="./assets/player_icon2.png" alt="">
+                <img class="music_icon3" src="./assets/play.png"  alt="">
+                <img class="music_icon2" src="./assets/player_icon4.png" alt="">
+                <img class="music_icon1" src="./assets/player_icon5.png" alt="">
+            </div>
+            <div class="newPlayerBottomIcons">
+                <img src="/assets/controls_icon4.png" alt="">
+                <i class="fa-solid fa-share-nodes"></i>
+            </div>
+        </div>
+
+        <div class="side_bar">
+            <div class="upper">
+                <ul id="hideUl">
+                    <li><a href="#"><i class="fa-solid fa-house"></i></a></li>
+                    <li><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+                </ul>
+                <ul id="showUl">
+                    <li><a href="#"><i class="fa-solid fa-house"></i>Home</a></li>
+                    <li class="search" ><a href="#"><i class="fa-solid fa-magnifying-glass"></i> Search</a></li>
+                </ul>
+            </div>
+            <div class="lower">
+                <ul>
+                    <li><i class="fa-solid fa-book-open-reader"></i></li>
+                    <li><i class="fa-solid fa-gear"></i></li>
+                </ul>
+                
+                <div class="lower_header">
+                    <div class="right_icon">
+                        
+                        <img src="./assets/library_icon.png" alt="">
+                        <a href="#">Your Library</a>
+                    </div>
+                    <div class="left_icon">
+                        <div class="one"><i class="fa-solid fa-plus"></i></div>
+                        <div class="two"><i class="fa-solid fa-arrow-right"></i></div>
+                    </div>
+                </div>
+                <div class="lower_card">
+                    <div class="side_bar_card_1 bars">
+                        <div class="box_p1">Create your first playlist</div>
+                        <div class="box_p2">It's easy, we'll help you</div>
+                        <button class="box_but hover pointer">Create playlist</button>
+                    </div>
+                    
+                    <div class="side_bar_card_2 bars">
+                        <div class="box_p1">Let's find some podcasts to follow</div>
+                        <div class="box_p2">We'll keep you updated on new episodes</div>
+                        <button class="box_but box_but_2 hover pointer">Browse podcasts</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="main_content">
+            <ul class="mainNav">
+                <ul class="mainNav1">
+                    <i class="fa-solid fa-xmark"></i>
+                    <li>View Account<i class="fa-solid fa-arrow-up"></i></li>
+                    <li>Profile</li>
+                    <li>Log Out</li>
+                    <hr>
+                </ul>
+                <ul class="mainNav2">
+                    <li>Premium</li>
+                    <li>Support</li>
+                    <li>Download</li>
+                    <li>Privacy</li>
+                    <li>Terms</li>
+                </ul>
+            </ul>
+            <div class="main_header_1">
+                <div class="header_img">
+                    <div class="left_header_icon"><img src="./assets/backward_icon.png" alt=""></div>
+                    <div class="right_header_icon"><img src="./assets/forward_icon.png" alt=""></div>
+                </div>
+                <div class="header_button">
+                    <button class="but1 but_all hover pointer">Explore Premium</button>
+                    <button class="but2 but_all hover pointer"><i class="fa-regular fa-circle-down"></i>Install App</button> 
+                    <button class="but3 hover pointer"><i class="fa-regular fa-bell"></i></button>
+                    <button class="but3 hover pointer"><i class="fa-regular fa-user"></i></button>     
+                </div>
+            </div>
+            <div class="main_header_2">
+                <button class="header2_but_1 but_all pointer">All</button>
+                <button class="header2_but_2 but_all pointer">Music</button>
+                <button class="header2_but_3 but_all pointer">Podcasts</button>
+            </div>
+            <div class="main_header_3">
+                <span class="outerSpan"><i class="fa-brands fa-spotify"></i><span class="innerSpan"> Spotify</span> </span>
+                <span><i class="fa-solid fa-gear"></i></span>
+            </div>
+
+            <div class="card_section">
+                <div class="headline">
+                    <h2>Trending now near you</h2>
+                    <p>Show all</p>
+                </div>
+                
+                    <div class="recently_played">
+                        
+                        <div class="trending_cards recent_card pointer">
+                                <img class="card" src="./assets/card2img.jpeg" alt="">
+                                <img class="play_img" src="./assets/play.png" alt="">
+                                <p class="title">Paon Ki Jutti</p>
+                                <p class="description">Jyoti Nooran</p>
+                            <audio>
+                                <source src="./assets/music/1.mp3" type="audio/mpeg">
+                            </audio>
+                        </div>
+                        <div class="trending_cards recent_card pointer">
+                            
+                                <img class="card" src="./assets/card3img.jpeg" alt="">
+                                <img class="play_img" src="./assets/play.png" alt="">
+                                <p class="title">Morni</p>
+                                <p class="description">Raftaar</p>
+                            
+                            <audio>
+                                <source src="./assets/music/2.mp3" type="audio/mpeg">
+                            </audio>
+                        </div>
+                        <div class="trending_cards recent_card pointer">
+                            
+                                <img class="card" src="./assets/card4img.jpeg" alt="">
+                                <img class="play_img" src="./assets/play.png" alt="">
+                                <p class="title">Zaalima</p>
+                                <p class="description">Arijit Singh</p>
+                            
+                            <audio>
+                                <source src="./assets/music/3.mp3" type="audio/mpeg">
+                            </audio>
+                        </div>
+                        
+                    </div>
+                    
+                
+            </div>
+            <div class="card_section">
+                <div class="headline">
+                    <h2>Popular In India</h2>
+                    <p>Show all</p>
+                </div>
+                <div class="recently_played">
+                    
+                    <div class="trending_cards recent_card pointer">
+                        <img class="card" src="./assets/card10img.jpg" alt="">
+                        <img class="play_img" src="./assets/play.png" alt="">
+                        <p class="title">Teri Baaton ne</p>
+                        <p class="description">Shahid Kapoor</p>
+                        <audio>
+                            <source src="./assets/music/4.mp3" type="audio/mpeg">
+                        </audio>
+                    </div>
+                    <div class="trending_cards recent_card pointer">
+                        <img class="card" src="./assets/card9img.jpg" alt="">
+                        <img class="play_img" src="./assets/play.png" alt="">
+                        <p class="title">Yimmy Yimmy</p>
+                        <p class="description">Shreya Ghoshal</p>
+                        <audio>
+                            <source src="./assets/music/5.mp3" type="audio/mpeg">
+                        </audio>
+                    </div>
+                    <div class="trending_cards recent_card pointer">
+                        <img class="card" src="./assets/card11img.jpg" alt="">
+                        <img class="play_img" src="./assets/play.png" alt="">
+                        <p class="title">Soni Soni</p>
+                        <p class="description">Rohit Saraf</p>
+                        <audio>
+                            <source src="./assets/music/6.mp3" type="audio/mpeg">
+                        </audio>
+                    </div>
+                    <div class="trending_cards recent_card pointer">
+                        <img class="card" src="./assets/card12img.jpg" alt="">
+                        <img class="play_img" src="./assets/play.png" alt="">
+                        <p class="title">LEHNGA</p>
+                        <p class="description">DILJIT DOSANJH</p>
+                        <audio>
+                            <source src="./assets/music/7.mp3" type="audio/mpeg">
+                        </audio>
+                    </div>
+                </div>
+            </div>
+            <div class="card_section">
+                <div class="headline">
+                    <h2>Top Songs</h2>
+                    <p>Show all</p>
+                </div>
+                <div class="recently_played">
+                    
+                    <div class="recent_card pointer">
+                        <img class="card" src="./assets/card5img.jpeg" alt="">
+                        <img class="play_img" src="./assets/play.png" alt="">
+                        <p class="title">Trending Now India</p>
+                        <p class="description">Every track you're listening/should be...</p>
+                    </div>
+                    <div class="recent_card pointer">
+                        <img class="card" src="./assets/card6img.jpeg" alt="">
+                        <img class="play_img" src="./assets/play.png" alt="">
+                        <p class="title">Indie Rock Hits</p>
+                        <p class="description">True indie rock hits.</p>
+                    </div>
+                    <div class="recent_card pointer">
+                        <img class="card" src="./assets/card1img.jpeg" alt="">
+                        <img class="play_img" src="./assets/play.png" alt="">
+                        <p class="title">Indie Rock Hits</p>
+                        <p class="description">True indie rock hits.</p>
+                    </div>
+                </div>
+            
+            <div class="footer"><div class="line"></div></div>
+        </div>
+
+        
+        <div id="bottom-player">
+            <div class="track-info">
+                <img class="trackImg" src="/assets/music_cover.jpg" alt="Track" >
+                <div class="trackText" >
+                    <div class="text1">Nashe Si Chadh</div>
+                    <div class="text2" style="font-size: 0.8em;">Vishal-Shekhar</div>
+                </div>
+            </div>
+            <div class="controls">
+                <i class="fa-regular fa-heart"></i>
+                <img class="music_icon3" src="./assets/play.png"  alt="">
+            </div>
+        </div>
+        
+        <div class="music_player">
+            
+            <div class="music_left">
+                <img class="playingCard pointer" src="./assets/music_cover.jpg" alt="">
+                <div class="music_title">
+                    <a class="title1" href="#">Paint The Town</a>
+                    <a class="title2" href="#">Doja Cat</a>
+                </div>  
+                <i class="fa-regular fa-heart"></i>
+            </div>
+
+            <div class="music_center">
+                <div class="music_all_icons">
+                    <img class="music_icon1" src="./assets/player_icon1.png" alt="">
+                    <img class="music_icon2" src="./assets/player_icon2.png" alt="">
+                    <img class="music_icon3" src="./assets/player_icon3.png"  alt="">
+                    <img class="music_icon2" src="./assets/player_icon4.png" alt="">
+                    <img class="music_icon1" src="./assets/player_icon5.png" alt="">
+                </div>
+                <div class="play_bar">
+                    <span class="start" >0:00</span>
+                    <div id="track">
+                        <div id="innerTrack"></div>
+                        <div id="innerThumb"></div>
+                    </div>
+                    <span class="end" >0:00</span>
+                </div>
+            </div>
+
+            <div class="music_right">
+                <img class="lowerRightIcon1" src="./assets/controls_icon1.png" alt="">
+                <img class="lowerRightIcon2" src="./assets/controld_icon2.png" alt="">
+                <img class="lowerRightIcon3" src="./assets/controls_icon3.png" style="height: 20px; width: 20px; margin-right: 7px; margin-top: 9px; opacity: 0.7;" alt="">
+                <img class="lowerRightIcon4" src="./assets/controls_icon4.png" style="height: 14px; width: 17px; margin-top: 11px; opacity: 0.7;" alt="">
+                <img class="lowerRightIcon5" id="volumeIcon" src="./assets/volume1.png" alt="">
+                <div id="volume">
+                        <div id="volumeTrack"></div>
+                        <div id="volumeThumb"></div>
+                </div>
+                <img class="inScreenButton" src="assets/album_icon2.png" alt="">
+            </div>
+
+            <div id="footerNev">
+                <a class="nev1" href="#"><i class="fa-solid fa-house"></i><span>Home</span></a>
+                <a class="nev2" href="#"><i class="fa-solid fa-magnifying-glass"></i><span>Search</span></a>
+                <a class="nev2" href="#"><i class="fa-solid fa-book-open-reader"></i><span>Your Library</span></a>
+                <a class="nev2" href="#"><i class="fa-brands fa-spotify"></i><span>Get App</span></a>
+            </div>
+
+            
+            
+        </div>
+
+        
+    </div>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
