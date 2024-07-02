@@ -989,8 +989,8 @@
         flex-direction: column;
         position: fixed;
         z-index: 7;
-        height: 98%;
-        width: 96%;
+        height: 97%;
+        width: 95%;
         background-color: rgb(196, 0, 0);
         padding: 12px 15px 12px 15px;
         justify-content: space-evenly;
