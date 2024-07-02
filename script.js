@@ -4,6 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const xmark = document.querySelector(".mainNav .fa-xmark")
     const gearIcon = document.querySelector(".main_header_3 .fa-gear")
     const mainNav = document.querySelector(".mainNav")
+    const faHeart = document.querySelectorAll(".fa-heart")
 
     gearIcon.addEventListener("click", () => {
         mainNav.style.transform = "translateX(0%)";
@@ -16,20 +17,16 @@ document.addEventListener('DOMContentLoaded', () => {
         mainNav.style.opacity = "0";
     })
 
+    // ================><=================
+    faHeart.forEach(heart => {
+        heart.addEventListener("click", () => {
+            heart.classList.toggle("fa-solid")
+            
+        } )
+    })
 
-
-
-
-
-
-
-
-
-
-
-
-
-    
+    // ================><=================
+       
     let trendingCards = document.querySelectorAll(".trending_cards");
     let innerTrack = document.querySelector("#innerTrack")
     let newPlayerInnerTrack = document.querySelector("#newPlayerInnerTrack")
@@ -46,6 +43,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let newPlayer = document.querySelector("#newPlayer");
     let newPlayerImg = document.querySelector(".newPlayerImg");
     let newPlayerTexts = document.querySelector(".newPlayerTexts");
+    
     let currentlyPlayingAudio = null;
     let currentlyPlayingImage = null;
     
@@ -61,7 +59,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     bottomPlayer.style.display = "flex";
                 }
 
-                bottomPlayer.firstElementChild.addEventListener("click", () => {
+                bottomPlayer.firstElementChild.firstElementChild.addEventListener("click", () => {
                     newPlayer.style.transform = "translateY(0%)"
                 })
 
@@ -84,7 +82,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     const color1 = getRandomColor();
                     const color2 = getRandomColor();
                     newPlayer.style.background = `linear-gradient(135deg, ${color1}, ${color2})`;
-                    bottomPlayer.style.background = `linear-gradient(135deg, ${color1}, ${color2})`;
+                    bottomPlayer.firstElementChild.style.background = `linear-gradient(135deg, ${color1}, ${color2})`;
                 }
                 
 
