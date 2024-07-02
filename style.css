@@ -423,7 +423,6 @@
     opacity: 0.5;
 }
 .fa-heart{
-    color: white;
     margin-top: 20px;
     color: rgb(255, 49, 84);
     padding-right: 10px;
@@ -886,6 +885,7 @@
     .main_content{
         height: 95vh;
         margin: 0;
+        padding-left: 10px;
     }
 
     .mainNav .fa-xmark{
@@ -1062,7 +1062,7 @@
         display: flex;
     }
     .newPlayerHeart .fa-heart{
-        color: white;
+        color: rgb(255, 49, 84);
         font-size: 25px;
         padding-bottom: 10px;
         margin-right: 16px;
@@ -1154,8 +1154,7 @@
     .trending_cards .description{
         display: none;
     }
-}
-@media screen and (max-width: 650px){
+
     .headline p{
        display: none;
     }
@@ -1176,4 +1175,3 @@
         height: 350px;
     }
 }
-    
