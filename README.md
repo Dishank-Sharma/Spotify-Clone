@@ -2,7 +2,7 @@
 This website is a clone of the Spotify music app written in HTML CSS and JS.
 This Website works so you can listen to songs on different devices but it is more focused on Designing And Responsiveness.
 
-# Demo
+# Preview
 https://dishank-sharma.github.io/Spotify-Clone/
 
 # Preview On Different Devices
