@@ -36,6 +36,10 @@ To run this project locally:
    ```bash
    cd Spotify-Clone
 
+## License
+
+This project is licensed under the MIT License.
+
 # Acknowledgements
 
 - Inspired by the original Spotify app.
