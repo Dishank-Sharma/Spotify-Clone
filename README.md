@@ -24,9 +24,17 @@ To view or edit the project, simply clone this repository and open the `index.ht
 - CSS
 - JavaScript
 
-  ```bash
-  git clone https://github.com/yourusername/Spotify-Clone.git
-  cd Spotify-Clone
+ ## Getting Started
+
+To run this project locally:
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yourusername/Spotify-Clone.git
+
+2. Navigate to the project directory:
+   ```bash
+   cd Spotify-Clone
 
 # Acknowledgements
 
