@@ -1,8 +1,12 @@
 # Spotify-Clone
 
-![Spotify-Clone](![3-devices-black](https://github.com/user-attachments/assets/358e8907-88c3-4292-80e9-65bb691061a4))
+![Spotify-Clone](https://github.com/user-attachments/assets/358e8907-88c3-4292-80e9-65bb691061a4)
 
 This project is a clone of the Spotify music app, developed using HTML, CSS, and JavaScript. The main focus of this website is on design and responsiveness, ensuring that it looks great and functions smoothly across different devices.
+
+## Live Demo
+
+Check out the live demo here: [Spotify-Clone Website](https://spotify-dishank.netlify.app/)
 
 ## Features
 
